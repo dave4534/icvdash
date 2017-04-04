@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/jquery/dist/jquery.min.js">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body>
+
+<!--  Nav Bar -->
+<div class="row navBar">
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+   <div><img src="images/logo.svg" class="ourLogo"></div>
+  </div>
+
+  <div class="navBarMiddleColumn col-xs-6 col-sm-6 col-md-6 col-lg-6">
+     <div class="inputContainer">
+      <input type="search" placeholder="Type to search" class="searchInput">
+     </div> 
+  </div>
+
+  <div class="navBarRightColumn col-xs-12 col-sm-4 col-md-4 col-lg-4">
+   
+   <div class="navCircle"><a href="#/home"><img class="profilePic"  src="images/profilePic.png"></a></div>
+   <div class="navCircle"><i style="font-size: 1.5em;" class="fa fa-comment navIcon" aria-hidden="true"></i></div>
+   <div class="navCircle"><i style="font-size: 1.5em;" class="fa fa-print navIcon" aria-hidden="true"></i></div>
+   <div class="navCircle"><i style="font-size: 1.5em;" class="fa fa-bell navIcon" aria-hidden="true"></i></div>
+  
+  </div>
+</div>
+<!--  End of Nav Bar -->
+
+<!-- Daily Exposure -->
+<div class="row dashRow" style="padding-top: 30px;">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 leftColumn">
+      <div class="dashTitle">Clicktale Dashboard</div>
+      <nav class="sideNav">
+        <ul>
+          <li><i class="fa fa-circle circle" style="font-size: .7em;" aria-hidden="true"></i>Overview</li>
+          <li>Positions</li>
+          <li>Candidates</li>
+          <li>Insights</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 rightColumn">
+      <div class="dashContainer">
+        
+        <div class="header">Daily Exposure</div>
+          <div class="rowContainer row">
+            <div class="one-third-row cardDesign col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <div class="moduleHeader">Total Impressions</div>
+              <p class="moduleNumber"><i class="fa fa-caret-up mycaret" style="font-size: .6em" aria-hidden="true"></i>38%</p>
+            </div>
+            <div class="one-third-row cardDesign col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <div class="moduleHeader">Total Candidates</div>
+              <p class="moduleNumber"><i class="fa fa-caret-up mycaret" style="font-size: .6em" aria-hidden="true"></i>15%</p>
+            </div>
+            <div class="one-third-row cardDesign col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <div class="moduleHeader">Response Rate</div>
+              <p class="moduleNumber">96%</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<!-- End of Daily Exposure -->
+
+<!-- Total Candidates -->
+
+<div class="row dashRow">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 leftColumn"></div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 rightColumn">
+      <div class="dashContainer">
+        
+         <hr class="myhr"/>
+
+        <div class="header">Total Candidates<div class="cardDesign timeFilter">
+          <ul>
+            <li>Today</li>
+            <li>This Week</li>
+            <li>This Month</li>
+            <li>This Year</li>
+            <li>Custom</li>
+          </ul>
+        </div>
+        </div>
+        <div class="graphImage"> <img src="images/totalCandidatesChart.png"></div>
+          <!-- <div class="rowContainer row">
+            <div class="cardDesign">
+            </div> -->
+          </div>
+        </div>
+    </div>
+</div>
+
+<!-- End of Total Candidates -->
+
+<!-- Recently Posted -->
+<div class="row dashRow">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 leftColumn"></div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 rightColumn">
+      <div class="dashContainer">
+        
+        <hr class="myhr"/>
+
+        <div class="header">Recently Posted</div>
+        <div class="position">Software Engineer <div class="posted">Posted Yesterday</div></div>
+          <div class="rowContainer row">
+
+            <div class="impressionsOverview cardDesign col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="halfModule">
+                <span class="halfHalfModule">
+                  <p class="moduleHeader"><b>Impressions</b></p>
+                  <p class="moduleNumber">3.5k</p>
+                </span>
+                 <span class="halfHalfModule">
+                  <p class="moduleHeader">Above 70%</p>
+                  <p class="moduleNumber">715</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="impressionsOverview cardDesign col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="halfModule">
+                <span class="halfHalfModule">
+                  <p class="moduleHeader"><b>Applicants</b></p>
+                  <p class="moduleNumber">1.2k</p>
+                </span>
+                 <span class="halfHalfModule">
+                  <p class="moduleHeader">Above 70%</p>
+                  <p class="moduleNumber">419</p>
+                </span>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End of Recently Posted -->
+
+<!-- Candidate Patterns -->
+
+<div class="row dashRow">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 leftColumn"></div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 rightColumn">
+      <div class="dashContainer">
+        
+        <hr class="myhr"/>
+
+        <div class="header">Candidate Patterns</div>
+        <div class="subheader">Top reasons for mismatch</div>
+          
+
+
+          <div class="rowContainer row">
+            <div class="patternContainer">
+
+              <div class="moduleContainer">
+                <div class="candidatePatternModule cardDesign ">
+                    <div class="patternIcon"> <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i></div>
+                    <p class="patternTitle">Distance</p>
+                </div>
+                <p class="patternSubtitle"><i class="fa fa-caret-down patternSubtitleCaret" aria-hidden="true"></i>86 (2%)</p>
+              </div>
+
+              <div class="moduleContainer">
+                <div class="candidatePatternModule cardDesign ">
+                    <span class="patternIcon"> <i class="fa fa-money fa-3x" aria-hidden="true"></i></span>
+                    <p class="patternTitle">Salary</p>
+                </div>
+                <p class="patternSubtitle"><i class="fa fa-caret-down patternSubtitleCaret" aria-hidden="true"></i>21 (.6%)</p>
+              </div>
+
+              <div class="moduleContainer">
+                <div class="candidatePatternModule cardDesign ">
+                    <span class="patternIcon"> <i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></span>
+                    <p class="patternTitle">Requirements</p>
+                </div>
+                <p class="patternSubtitle"><i class="fa fa-caret-down patternSubtitleCaret" aria-hidden="true"></i>15 (.4%)</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="rowContainer row">
+            <div class="patternContainer">
+
+              <div class="moduleContainer">
+                <div class="candidatePatternModule cardDesign ">
+                    <span class="patternIcon"> <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i></span>
+                    <p class="patternTitle">PHP</p>
+                </div>
+                <p class="patternSubtitle"><i class="fa fa-caret-down patternSubtitleCaret" aria-hidden="true"></i>13 (.3%)</p>
+              </div>
+
+              <div class="moduleContainer">
+                <div class="candidatePatternModule cardDesign ">
+                    <span class="patternIcon"> <i class="fa fa-pencil-square fa-3x" aria-hidden="true"></i></span>
+                    <p class="patternTitle">Design</p>
+                </div>
+                <p class="patternSubtitle"><i class="fa fa-caret-down patternSubtitleCaret" aria-hidden="true"></i>11 (.3%)</p>
+              </div>
+
+              <div class="moduleContainer">
+                <div class="candidatePatternModule cardDesign ">
+                    <span class="patternIcon"> <i class="fa fa-desktop fa-3x" aria-hidden="true"></i></span>
+                    <p class="patternTitle">Python</p>
+                </div>
+                <p class="patternSubtitle"><i class="fa fa-caret-down patternSubtitleCaret" aria-hidden="true"></i>10 (.2%)</p>
+              </div>
+
+            </div>
+          </div>
+
+
+
+    </div>
+</div>
+
+<!-- End of Candidate Patterns -->
+
+<!-- Recommended Actions -->
+
+<div class="row dashRow">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 leftColumn"></div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 rightColumn">
+      <div class="dashContainer" style="padding-bottom: 100px;">
+        
+        <hr class="myhr"/>
+
+        <div class="header">Recommended Actions</div>
+        <div class="subheader">As you continue to use ICV, more relevant suggestions will appear here.</div>
+          <div class="rowContainer row">
+
+            <div class="action cardDesign col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <i class="fa fa-pencil-square-o fa-2x recommendIcon" aria-hidden="true"></i>
+               <p class="actionHeader">Edit Job Post</p>
+               <p class="actionSubheader">The 'Software Engineer' position is 35% complete.</p>
+               <i class="fa fa-angle-right fa-2x chevron" aria-hidden="true"></i>
+            </div>
+
+            <div class="action cardDesign col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <i class="fa fa-camera fa-2x recommendIcon" aria-hidden="true"></i>
+               <p class="actionHeader">Add Photos</p>
+               <p class="actionSubheader">You have 2 out of 5 recommended photos.</p>
+               <i class="fa fa-angle-right fa-2x chevron" aria-hidden="true"></i>
+            </div>
+
+            <div class="action cardDesign col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <i class="fa fa-share-alt fa-2x recommendIcon" aria-hidden="true"></i>
+               <p class="actionHeader">Share</p>
+               <p class="actionSubheader">Embed this position or share the link.</p>
+               <i class="fa fa-angle-right fa-2x chevron" aria-hidden="true"></i>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- End of Recommended Actions -->
+
+<!-- Scripts -->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
